@@ -7,3 +7,6 @@
 [submodule "billing-service"]
 	path = billing-service
 	url = https://github.com/viminizer/billing-service.git
+[submodule "api-gateway"]
+	path = api-gateway
+	url = https://github.com/viminizer/api-gateway-pm.git
