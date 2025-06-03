@@ -1,0 +1,52 @@
+# === Maven ===
+**/target/
+
+# === Docker ===
+**/*.pid
+**/docker-compose.override.yml
+**/.docker/
+**/docker-compose-debug.yml
+
+# Ignore Docker volumes and container logs
+**/tmp/
+**/data/
+**/var/
+**/*.log
+
+# === IntelliJ IDEA ===
+.idea/
+**/.idea/
+*.iml
+**/*.iml
+
+# === Eclipse ===
+**/.classpath
+**/.project
+**/.settings/
+
+# === VS Code ===
+**/.vscode/
+
+# === Node/Frontend (if applicable) ===
+**/node_modules/
+**/dist/
+**/build/
+
+# === OS junk files ===
+.DS_Store
+Thumbs.db
+
+# === Environment and secrets ===
+**/.env
+**/.env.*
+**/secrets/
+
+# === Backup and temp files ===
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+**/.git/
+
+db_data
