@@ -10,7 +10,21 @@ services:
     ports:
       - "5050:5432"
     volumes:
-      - ./db_data:/var/lib/postgresql/data
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - internal
+
+  api-gateway:
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    image: api-gateway:latest
+    restart: unless-stopped
+    container_name: api-gateway
+    depends_on:
+      - patient-service
+    ports:
+      - "4004:4004"
     networks:
       - internal
 
@@ -21,8 +35,6 @@ services:
     image: patient-service:latest
     container_name: patient-service
     restart: unless-stopped
-    ports:
-      - "4000:4000"
     depends_on:
       - patient-service-db
     environment:
