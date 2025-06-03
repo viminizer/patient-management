@@ -1,0 +1,3 @@
+[submodule "patient-service"]
+	path = patient-service
+	url = https://github.com/you/patient-service.git
