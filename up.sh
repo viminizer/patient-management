@@ -1,6 +1,6 @@
 #!/bin/bash
 
 docker compose stop
-docker rmi -f $(docker images -aq)
-docker compose rm -f
+docker compose rm -f patient-service billing-service analytics-service
+docker rmi -f patient-service billing-service analytics-service
 docker compose up -d

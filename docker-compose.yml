@@ -49,6 +49,20 @@ services:
     networks:
       - internal
 
+  analytics-service:
+    build:
+      context: ./analytics-service
+      dockerfile: Dockerfile
+    image: analytics-service:latest
+    restart: unless-stopped
+    container_name: analytics-service
+    environment:
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+    ports:
+      - "4002:4002"
+    networks:
+      - internal
+
   kafka:
     image: bitnami/kafka
     container_name: kafka
