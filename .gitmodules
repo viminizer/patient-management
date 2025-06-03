@@ -1,3 +1,9 @@
 [submodule "patient-service"]
 	path = patient-service
-	url = https://github.com/you/patient-service.git
+	url = https://github.com/viminizer/patient-service.git
+[submodule "analytics-service"]
+	path = analytics-service
+	url = https://github.com/viminizer/analytics-service.git
+[submodule "billing-service"]
+	path = billing-service
+	url = https://github.com/viminizer/billing-service.git
