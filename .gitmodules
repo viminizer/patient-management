@@ -10,3 +10,6 @@
 [submodule "api-gateway"]
 	path = api-gateway
 	url = https://github.com/viminizer/api-gateway-pm.git
+[submodule "auth-service"]
+	path = auth-service
+	url = https://github.com/viminizer/auth-service-pm.git
