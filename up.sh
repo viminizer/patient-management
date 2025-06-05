@@ -1,8 +1,8 @@
 #!/bin/bash
 
 docker compose stop
-docker compose rm -f patient-service billing-service analytics-service api-gateway
-docker rmi -f patient-service billing-service analytics-service api-gateway
+docker compose rm -f auth-service
+docker rmi -f auth-service
 
 docker compose up -d patient-service
 docker compose up -d
