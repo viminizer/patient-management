@@ -36,6 +36,8 @@ services:
     image: api-gateway:latest
     restart: unless-stopped
     container_name: api-gateway
+    environment:
+      AUTH_SERVICE_URL: http://auth-service:4005
     depends_on:
       - patient-service
     ports:
