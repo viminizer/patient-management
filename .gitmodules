@@ -13,3 +13,6 @@
 [submodule "auth-service"]
 	path = auth-service
 	url = https://github.com/viminizer/auth-service-pm.git
+[submodule "integration-tests"]
+	path = integration-tests
+	url = https://github.com/viminizer/integration-tests-pm.git
