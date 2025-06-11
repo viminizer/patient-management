@@ -16,3 +16,6 @@
 [submodule "integration-tests"]
 	path = integration-tests
 	url = https://github.com/viminizer/integration-tests-pm.git
+[submodule "infrastructure"]
+	path = infrastructure
+	url = https://github.com/viminizer/infrastructure-pm.git
